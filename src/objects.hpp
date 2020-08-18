@@ -14,7 +14,6 @@ namespace menu {
   class MenuItem;
   class Renderer;
 
-
   
   enum MenuItemType {
 		     Text,
@@ -23,7 +22,6 @@ namespace menu {
 		     ScriptOutput,
 		     ScriptMenu
   };
-
 
   
   class Menu {
@@ -35,7 +33,6 @@ namespace menu {
     Menu(json*);
     ~Menu();
   };
-
 
   
   class MenuItem {
@@ -51,7 +48,6 @@ namespace menu {
     ~MenuItem();
   };
 
-
   
   class Renderer {
   public:
@@ -60,6 +56,8 @@ namespace menu {
     Renderer();
     Renderer(Menu*);
     ~Renderer();
+
+    void Print();
   };
 
   
